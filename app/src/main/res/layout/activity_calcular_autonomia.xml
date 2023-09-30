@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="35dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_close_24" />
+
+    <TextView
+        android:id="@+id/tv_titulo"
+        style="@style/TextAppearance.MaterialComponents.Body2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Calcular Autonomia"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_close" />
+
+    <EditText
+        android:id="@+id/et_Preço_Kwh"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Preço Kwh"
+        android:inputType="numberDecimal"
+        android:maxLength="10"
+        android:maxLines="2"
+        app:layout_constraintEnd_toEndOf="@id/tv_titulo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_titulo" />
+
+    <EditText
+        android:id="@+id/et_Km_Percorrido"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Km Percorrido"
+        android:inputType="numberDecimal"
+        android:maxLength="10"
+        android:maxLines="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_Preço_Kwh" />
+
+    <Button
+        android:id="@+id/btn_calcular"
+        android:layout_width="352dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:text="Calcular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.271"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_Km_Percorrido" />
+
+    <TextView
+        android:id="@+id/tv_autonomia"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:layout_marginLeft="25sp"
+        android:layout_marginRight="25sp"
+        android:text="Autonomia:"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_calcular" />
+
+    <TextView
+        android:id="@+id/tv_autonomia_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25sp"
+        android:layout_marginRight="25sp"
+        android:layout_marginTop="16dp"
+        android:textSize="20dp"
+        android:hint="Autonomia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_autonomia" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
